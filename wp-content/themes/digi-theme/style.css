@@ -20,6 +20,7 @@ body {
 	font-weight: 400;
 	line-height: 1.2;
 	position: relative;
+	background-color: #F5F5F5;
 }
 
 a,
@@ -159,6 +160,117 @@ a img.aligncenter {
 	padding-left: 12px;
 	padding-right: 12px;
 } */
+
+/* Buttons */
+
+.bordered-button {
+	border: 1px solid #dedede;
+    padding: 10px 20px;
+    border-radius: 30px;
+	transition: 0.3s;
+}
+
+.bordered-button:hover {
+	color: rgb(255, 162, 24);
+}
+
+/* Header */
+
+.top-header {
+	padding: 15px 0;
+	background-color: #fff;
+}
+
+header .main-menu {
+	padding-left: 0;
+	list-style-type: none;
+	display: flex;
+	margin-bottom: 0;
+}
+
+header .main-menu li {
+	margin-left: 20px;
+}
+
+header .main-menu li:first-child {
+	margin-left: 0;
+}
+
+#logo img {
+	max-width: 200px;
+}
+
+.header-second {
+	padding: 60px 0;
+}
+
+/* Posts */
+
+.post-thumbnail img {
+    width: 100%;
+    height: 220px;
+	object-fit: cover;
+}
+
+.list-blog-title {
+	font-size: 22px;
+    line-height: 25px;
+    margin-top: 10px;
+	text-align: center;
+}
+
+.post {
+	background-color: #fff;
+	padding: 20px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.post-ex {
+	text-align: center;
+    margin-top: 25px;
+}
+
+.posts-block .col-md-6 {
+	margin-top: 30px;
+}
+
+.button-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.post-cat {
+	cursor: pointer;
+    padding: 3px 10px;
+    border: 1px solid #dedede;
+	margin-left: 10px;
+	transition: 0.3s;
+}
+
+.post-cat:hover {
+	color: rgb(255, 162, 24);
+}
+
+.post-cat:first-child {
+	margin-left: 0;
+}
+
+.post-categories {
+	margin: 15px 0;
+    justify-content: center;
+    display: flex;	
+}
+
+/* Footer */
+
+.footer-main {
+	padding: 100px 0;
+	text-align: center;
+}
 
 /*MAIN CSS*/
 .header-items {

@@ -10,18 +10,24 @@
 </head>
 <body <?php body_class(); ?>>
 <header itemscope itemtype="http://schema.org/WPHeader">
-	<div class="container flex-container header-items">
-		<div itemscope itemtype="http://schema.org/Organization" id="logo">
-			<a itemprop="url" href="<?php echo bloginfo('url') ?>">
-				<img itemprop="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo.png">
-			</a>
+	<div class="top-header">
+		<div class="container">
+			<nav itemscope itemtype="http://schema.org/SiteNavigationElement"><?php
+				wp_nav_menu([
+					'theme_location' => 'primary-menu',
+					'menu_class' => 'main-menu',
+					'container' => '',
+				]); ?>
+			</nav>
 		</div>
-		<nav itemscope itemtype="http://schema.org/SiteNavigationElement"><?php
-			wp_nav_menu([
-				'theme_location' => 'primary-menu',
-				'menu_class' => 'main-menu',
-				'container' => '',
-			]); ?>
-		</nav>
+	</div>
+	<div class="header-second">
+		<div itemscope itemtype="http://schema.org/Organization" id="logo">
+			<div class="container">
+				<a itemprop="url" href="<?php echo bloginfo('url') ?>">
+					<img itemprop="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo.png">
+				</a>
+			</div>
+		</div>
 	</div>
 </header>
